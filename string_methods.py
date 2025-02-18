@@ -9,7 +9,7 @@ def add_comma(a_string):
     returns a copy of the string with every word separated by a comma
     example: add_comma("John Peter Jude") => "John, Peter, Jude"
     """
-    return (", ".join(a_string.split()))
+    return ", ".join(a_string.split())
 
 def belongs_to(a_string, a_word):
     """
@@ -61,4 +61,4 @@ def full_description_formatting(first_name, last_name, age):
      the age using string interpolation
     example: full_description_formatting("john", "doe", 33) => "John Doe is 33"
     """
-    return (f'{first_name.capitalize()} {last_name.capitalize()} is {age}')
+    return f'{first_name.capitalize()} {last_name.capitalize()} is {age}'
